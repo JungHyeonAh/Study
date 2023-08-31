@@ -130,12 +130,12 @@ template<class T> class Stack
 template<typename T>
 ostream& operator <<(ostream &out, Stack<T> &st){
 	T *temp = st.values;
-	out << "¦£¦¡¦¡¦¡¦¤"	<< endl;
+	out << "Â¦Â£Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¤"	<< endl;
 	for(int loop = st.top; loop >= 0; loop--)
 	{
 		out << "  " << temp[loop] << endl;
 	}
-	out << "¦¦¦¡¦¡¦¡¦¥" << endl;
+	out << "Â¦Â¦Â¦Â¡Â¦Â¡Â¦Â¡Â¦Â¥" << endl;
 	
 	return out;
 }
